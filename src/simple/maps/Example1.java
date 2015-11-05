@@ -40,6 +40,7 @@ public class Example1 {
         Map map = new HashMap(); // edit this!
         map.put("333-33-3333", e1);
         map.put("111-11-1111", e2);
+        map.put(e3.getSsn(), e3);
         
         // now retrieve one by its key
         Employee e = (Employee)map.get("111-11-1111");
@@ -63,7 +64,7 @@ public class Example1 {
         // Keys must be unique so we should use a Set. Note
         // that the isertion order is NOT maintained:
         System.out.println("\nUsing a keyset, get the employees...");
-        Set keys = map.keySet();
+        Set keys = map.keySet(); //gives a set of keys in map
         for(Object key : keys) {
             Employee found = (Employee)map.get(key);
             System.out.println(found.toString());
@@ -75,7 +76,7 @@ public class Example1 {
         // not necessarily unique, so we don't need a Set.
         // Note that the insertion order is NOT maintained:
         System.out.println("\nUsing a collection of values, get the Employees...");
-        Collection values = map.values();
+        Collection values = map.values(); //collection of values in the map
         for(Object emp : values) {
             System.out.println((Employee)emp);
         }
