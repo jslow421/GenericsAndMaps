@@ -34,6 +34,9 @@ public class Activity4 {
         for (Employee e : employeeSet) {
             System.out.println(e);
         }
+        
+        System.out.println("");
+        System.out.println("Order by first name:");
         System.out.println("");
 
         List<Employee> list = new ArrayList<>(employeeSet);
