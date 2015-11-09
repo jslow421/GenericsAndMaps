@@ -19,7 +19,7 @@ public class Activity2 {
         Employee e3 = new Employee(4,"Evans", "Bob", "444-44-4444");
         Employee e4 = new Employee(1,"Mallay", "Fred", "111-11-1111");
         
-        // HashMap<Integer, String> hmap = new HashMap<Integer, String>();
+        
         HashMap<String, Employee> employeeMap = new HashMap<>();
         
         employeeMap.put(e1.getSsn(), e1);
@@ -37,7 +37,7 @@ public class Activity2 {
     while (it.hasNext()) {
         Map.Entry pair = (Map.Entry)it.next();
         System.out.println(pair.getKey() + " = " + pair.getValue());
-        it.remove(); // avoids a ConcurrentModificationException
+        it.remove(); 
     }
     }
     
